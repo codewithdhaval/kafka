@@ -24,3 +24,5 @@
     kafka-topics.bat --zookeeper 127.0.0.1:2181 --list
     kafka-topics.bat --zookeeper 127.0.0.1:2181 --topic first_topic --describe
     kafka-topics.bat --zookeeper 127.0.0.1:2181 --topic first_topic --delete
+    Consumer :
+    kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --topic first_topic --from-beginning

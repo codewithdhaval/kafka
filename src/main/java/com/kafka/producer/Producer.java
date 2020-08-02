@@ -16,7 +16,7 @@ public class Producer {
         prop.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         prop.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(prop);
-        ProducerRecord<String, String> kRecord = new ProducerRecord("first_topic","Hello Kafka");
+        ProducerRecord<String, String> kRecord = new ProducerRecord("first_topic","Hello Kafka Consumer- Message 4");
         producer.send(kRecord);
         producer.flush();
         producer.close();
